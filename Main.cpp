@@ -5,11 +5,7 @@
 #include "mergeSort.h"
 #include "quickSort.h"
 using namespace std;
-
-// In vs code terminal, type cmd first!
-// python smaples.py 10000 randomSample.txt
-// g++ -O3 main.cpp -o out
-// out 1 randomSample.txt sortedSample.txt 
+ 
 /****************************************** Utilities *********************************************************/
 bool isSorted(int *a, const int &n)
 {
