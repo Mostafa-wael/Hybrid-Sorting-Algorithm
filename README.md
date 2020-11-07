@@ -1,5 +1,5 @@
 # Hybrid Sorting Algorithm
----
+
 ## Objective:
 -	Creating a hybrid sorting algorithm that is independent of the input sample size and its sorting status.
 
@@ -21,5 +21,11 @@
 - Creating a hybrid quick sort that is two times faster than the normal quick sort for sorted lists.
 -	Crating a hybrid sort that has the best-case time complexity (O(nlogn)) for any input size regardless of the data being sorted or not.
 
+---
+>To test the code:
+> 1. Open the terminal in your current working directory.
+> 2. Type "python runscript.py n data.txt" where n is any valid integer.
+> 3. Type "g++ -O3 SortingAlgo.cpp -o SortingAlgo".
+> 4. Type "SortingAlgo 1 data.txt sorted_data.txt running_time.txt", you can change the name of the second two files.
 
 
