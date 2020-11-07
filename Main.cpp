@@ -2,6 +2,8 @@
 #include <fstream>
 #include <chrono>
 #include "hybridSort.h"
+#include "mergeSort.h"
+#include "quickSort.h"
 using namespace std;
 
 // In vs code terminal, type cmd first!
@@ -96,12 +98,26 @@ int main(int numArg, char **args) // arg[1] = sortingAlgo, arg[2] = input file, 
 	}
 	case 3:
 	{
+		void (*mergeS)(int *, const int &) = mergeSort;
+		sortingTime = doSorting(a, size, mergeS);
+		sortingAlgo = "Merge Sort";
+		break;
+	}
+	case 4:
+	{
 		void (*hybridMS)(int *, const int &) = hybridMergeSort;
 		sortingTime = doSorting(a, size, hybridMS);
 		sortingAlgo = "Hyprid Merge Sort";
 		break;
 	}
-	case 4:
+	case 5:
+	{
+		void (*quickS)(int *, const int &) = quickSort;
+		sortingTime = doSorting(a, size, quickS);
+		sortingAlgo = "Quick Sort";
+		break;
+	}
+	case 6:
 	{
 		void (*hybridQS)(int *, const int &) = hybridQuickSort;
 		sortingTime = doSorting(a, size, hybridQS);
