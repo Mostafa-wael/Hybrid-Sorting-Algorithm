@@ -17,7 +17,11 @@ inline void hybridSort(int *a, const int &n)
 {
     // first check how much the array is sorted
     int numSorted = howMuchSorted(a, n-1);
-    if (numSorted >= 0.9 * n)
+    if (numSorted == n) 
+    {
+
+    } 
+    else if (numSorted >= 0.9 * n)
     {
         insertionSort(a, n);
     }
